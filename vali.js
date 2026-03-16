@@ -1,4 +1,4 @@
-alert("JS connected");
+
 
 function data() {
     var a = document.getElementById("username").value;
