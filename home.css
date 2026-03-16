@@ -15,12 +15,11 @@ justify-content:space-between;
 align-items:center;
 padding:20px;
 background:#ffffff;
-color:rgb(141, 65, 65);
 }
 
 
 nav a{
-color:rgb(228, 205, 75);
+color:orange;
 text-decoration:none;
 margin:0 10px;
 }
