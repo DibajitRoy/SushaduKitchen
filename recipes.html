@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SushaduKitchen - Recipes</title>
+    <link rel="stylesheet" href="./recipes.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo-part">
+            <img src="./pic/logo.png" class="logo">
+        </div>
+
+        <div class="menu">
+            <a href="home.html">Home</a>
+            <a href="recipes.html" class="active">Recipes</a>
+            <a href="categories.html">Categories</a>
+            <a href="about.html">About</a>
+        </div>
+
+        <div class="signout-part">
+            <button class="signout-btn">Sign Out</button>
+        </div>
+    </div>
+
+    <div class="top-section">
+        <h1>Recipes</h1>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search recipes">
+            <button onclick="searchRecipe()">Search</button>
+        </div>
+    </div>
+
+    <div class="main-section">
+
+        <div class="filter-box">
+            <h3>Recipe Difficulty</h3>
+
+            <button onclick="showAll()">All</button>
+            <button onclick="filterRecipe('Easy')">Easy</button>
+            <button onclick="filterRecipe('Medium')">Medium</button>
+            <button onclick="filterRecipe('Hard')">Hard</button>
+        </div>
+
+        <div class="recipe-container" id="recipeContainer">
+
+            <div class="card" data-name="Cheeseburger" data-level="Easy">
+                <img src="./pic/Cheeseburger.jpg">
+                <h2>Cheeseburger</h2>
+                <p class="level easy">Easy</p>
+                <p>Quick and tasty burger recipe.</p>
+                <button>View Recipe</button>
+            </div>
+
+            <div class="card" data-name="Creamy Pasta" data-level="Easy">
+                <img src="./pic/Creamy Pasta.webp" >
+                <h2>Creamy Pasta</h2>
+                <p class="level easy">Easy</p>
+                <p>Soft creamy pasta for lunch.</p>
+                <button>View Recipe</button>
+            </div>
+
+            <div class="card" data-name="Pizza" data-level="Medium">
+                <img src="./pic/Pizza.avif">
+                <h2>Pizza</h2>
+                <p class="level medium">Medium</p>
+                <p>Cheesy homemade pizza recipe.</p>
+                <button>View Recipe</button>
+            </div>
+
+            <div class="card" data-name="Fresh Salad" data-level="Easy">
+                <img src="./pic/Fresh Salad.jpeg">
+                <h2>Fresh Salad</h2>
+                <p class="level easy">Easy</p>
+                <p>Healthy salad with fresh vegetables.</p>
+                <button>View Recipe</button>
+            </div>
+
+            <div class="card" data-name="Paneer Tikka" data-level="Medium">
+                <img src="./pic/paneer tikka.jpg">
+                <h2>Paneer Tikka</h2>
+                <p class="level medium">Medium</p>
+                <p>Spicy grilled paneer dish.</p>
+                <button>View Recipe</button>
+            </div>
+
+            <div class="card" data-name="Chocolate Cake" data-level="Hard">
+                <img src="./pic/chocolatecake.jpg">
+                <h2>Chocolate Cake</h2>
+                <p class="level hard">Hard</p>
+                <p>Delicious dessert for special time.</p>
+                <button>View Recipe</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2024 SushaduKitchen. All rights reserved.</p>
+    </div>
+
+    <script src="./recipes.js"></script>
+</body>
+</html>
