@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Recipe</title>
+    <link rel="stylesheet" href="./viewrecipe.css">
+</head>
+<body>
+
+    <header>
+        <img src="./pic/logo.png" class="logo">
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="recipes.html">Recipes</a>
+            <a href="categories.html">Categories</a>
+            <a href="about.html">About</a>
+        </nav>
+
+        <button onclick="goBack()">Back</button>
+    </header>
+
+    <section class="recipe-details">
+        <div class="recipe-box">
+
+            <img id="recipeImage" src="" alt="Recipe Image">
+
+            <h1 id="recipeTitle">Recipe Name</h1>
+
+            <p><b>Difficulty:</b> <span id="recipeDifficulty"></span></p>
+            <p><b>Cooking Time:</b> <span id="recipeTime"></span></p>
+
+            <h2>Ingredients</h2>
+            <ul id="recipeIngredients"></ul>
+
+            <h2>Steps</h2>
+            <ol id="recipeSteps"></ol>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 SushaduKitchen. All rights reserved.</p>
+    </footer>
+
+    <script src="./viewrecipe.js"></script>
+</body>
+</html>
