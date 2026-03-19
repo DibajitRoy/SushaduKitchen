@@ -8,33 +8,29 @@
 </head>
 <body>
 
-    <div class="navbar">
-        <div class="logo-part">
-            <img src="./pic/logo.png" class="logo">
-        </div>
+    <header>
+        <img src="./pic/logo.png" class="logo">
 
-        <div class="menu">
+        <nav>
             <a href="home.html">Home</a>
-            <a href="recipes.html" class="active">Recipes</a>
+            <a href="recipes.html">Recipes</a>
             <a href="categories.html">Categories</a>
             <a href="about.html">About</a>
-        </div>
+        </nav>
 
-        <div class="signout-part">
-            <button class="signout-btn">Sign Out</button>
-        </div>
-    </div>
+        <button onclick="logout()">Sign Out</button>
+    </header>
 
-    <div class="top-section">
+    <section class="top-section">
         <h1>Recipes</h1>
 
         <div class="search-box">
-            <input type="text" id="searchInput" placeholder="Search recipes">
+            <input type="text" id="searchInput" placeholder="Search recipes" onkeyup="searchRecipe()">
             <button onclick="searchRecipe()">Search</button>
         </div>
-    </div>
+    </section>
 
-    <div class="main-section">
+    <section class="main-section">
 
         <div class="filter-box">
             <h3>Recipe Difficulty</h3>
@@ -45,62 +41,325 @@
             <button onclick="filterRecipe('Hard')">Hard</button>
         </div>
 
-        <div class="recipe-container" id="recipeContainer">
+        <div class="recipe-container">
 
-            <div class="card" data-name="Cheeseburger" data-level="Easy">
+            <div class="card">
                 <img src="./pic/Cheeseburger.jpg">
                 <h2>Cheeseburger</h2>
                 <p class="level easy">Easy</p>
-                <p>Quick and tasty burger recipe.</p>
+                <p>Juicy burger with cheese and soft bun.</p>
                 <button>View Recipe</button>
             </div>
 
-            <div class="card" data-name="Creamy Pasta" data-level="Easy">
-                <img src="./pic/Creamy Pasta.webp" >
+            <div class="card">
+                <img src="./pic/Creamy Pasta.webp">
                 <h2>Creamy Pasta</h2>
                 <p class="level easy">Easy</p>
-                <p>Soft creamy pasta for lunch.</p>
+                <p>Delicious pasta with creamy white sauce.</p>
                 <button>View Recipe</button>
             </div>
 
-            <div class="card" data-name="Pizza" data-level="Medium">
+            <div class="card">
                 <img src="./pic/Pizza.avif">
                 <h2>Pizza</h2>
                 <p class="level medium">Medium</p>
-                <p>Cheesy homemade pizza recipe.</p>
+                <p>Cheesy pizza with tasty toppings.</p>
                 <button>View Recipe</button>
             </div>
 
-            <div class="card" data-name="Fresh Salad" data-level="Easy">
-                <img src="./pic/Fresh Salad.jpeg">
+            <div class="card">
+                <img src="./pic/Fresh Salad.jpeg" >
                 <h2>Fresh Salad</h2>
                 <p class="level easy">Easy</p>
-                <p>Healthy salad with fresh vegetables.</p>
+                <p>Healthy mixed salad with fresh vegetables.</p>
                 <button>View Recipe</button>
             </div>
 
-            <div class="card" data-name="Paneer Tikka" data-level="Medium">
-                <img src="./pic/paneer tikka.jpg">
-                <h2>Paneer Tikka</h2>
+            <div class="card">
+                <img src="./pic/chicken shawarma.jpg">
+                <h2>Chicken Shawarma</h2>
                 <p class="level medium">Medium</p>
-                <p>Spicy grilled paneer dish.</p>
+                <p>Spicy and tasty chicken shawarma dish.</p>
                 <button>View Recipe</button>
             </div>
 
-            <div class="card" data-name="Chocolate Cake" data-level="Hard">
+            <div class="card">
                 <img src="./pic/chocolatecake.jpg">
                 <h2>Chocolate Cake</h2>
                 <p class="level hard">Hard</p>
-                <p>Delicious dessert for special time.</p>
+                <p>Rich chocolate cake for dessert lovers.</p>
                 <button>View Recipe</button>
             </div>
 
-        </div>
-    </div>
+            <div class="card">
+                <img src="./pic/begunvorta.jpg">
+                <h2>Begun Vorta</h2>
+                <p class="level easy">Easy</p>
+                <p>Traditional mashed eggplant with spices.</p>
+                <button>View Recipe</button>
+            </div>
 
-    <div class="footer">
+            <div class="card">
+                <img src="./pic/ButterCake.jpg">
+                <h2>Butter Cake</h2>
+                <p class="level medium">Medium</p>
+                <p>Soft and simple buttery cake recipe.</p>
+                <button>View Recipe</button>
+            </div>
+
+            <div class="card">
+                <img src="./pic/Mango-Ice-Cream.jpg">
+                <h2>Mango Ice Cream</h2>
+                <p class="level hard">Hard</p>
+                <p>Cold and sweet mango flavored dessert.</p>
+                <button>View Recipe</button>
+            </div>
+            <div class="card">
+    <img src="./pic/60StrawberryCake.jpg">
+    <h2>Strawberry Cake</h2>
+    <p class="level medium">Medium</p>
+    <p>Fresh strawberry flavored soft cake.</p>
+    <button>View Recipe</button>
+</div>
+
+<div class="card">
+    <img src="./pic/acarikhichuri.jpg">
+    <h2>Achar Khichuri</h2>
+    <p class="level easy">Easy</p>
+    <p>Traditional spicy khichuri with achar.</p>
+    <button>View Recipe</button>
+</div>
+
+<div class="card">
+    <img src="./pic/acharibiriyani.jpg">
+    <h2>Achari Biryani</h2>
+    <p class="level hard">Hard</p>
+    <p>Flavorful biryani with achar spices.</p>
+    <button>View Recipe</button>
+</div>
+
+<div class="card">
+    <img src="./pic/aluvorta.jpg">
+    <h2>Mashed Potato (Alu Vorta)</h2>
+    <p class="level easy">Easy</p>
+    <p>Simple mashed potato with mustard oil.</p>
+    <button>View Recipe</button>
+</div>
+
+<div class="card">
+    <img src="./pic/amachar.jpg">
+    <h2>Mango Pickle</h2>
+    <p class="level medium">Medium</p>
+    <p>Tangy and spicy mango pickle.</p>
+    <button>View Recipe</button>
+</div>
+
+<div class="card">
+    <img src="./pic/badamvorta.jpg">
+    <h2>Peanut Vorta</h2>
+    <p class="level easy">Easy</p>
+    <p>Crushed peanuts with spices.</p>
+    <button>View Recipe</button>
+</div>
+
+<div class="card">
+    <img src="./pic/bananajuice.jpg">
+    <h2>Banana Juice</h2>
+    <p class="level easy">Easy</p>
+    <p>Healthy banana smoothie drink.</p>
+    <button>View Recipe</button>
+</div>
+
+<div class="card">
+    <img src="./pic/Beef-Tehari.jpg">
+    <h2>Beef Tehari</h2>
+    <p class="level hard">Hard</p>
+    <p>Spicy beef rice dish full of flavor.</p>
+    <button>View Recipe</button>
+</div>
+
+<div class="card">
+    <img src="./pic/begunfish.jpg">
+    <h2>Eggplant Fish Curry</h2>
+    <p class="level medium">Medium</p>
+    <p>Fish cooked with eggplant curry.</p>
+    <button>View Recipe</button>
+</div>
+
+<div class="card">
+    <img src="./pic/begunvorta.jpg">
+    <h2>Eggplant Vorta</h2>
+    <p class="level easy">Easy</p>
+    <p>Smoky mashed eggplant with spices.</p>
+    <button>View Recipe</button>
+</div>
+
+<div class="card">
+    <img src="./pic/blueberryicecream.webp">
+    <h2>Blueberry Ice Cream</h2>
+    <p class="level medium">Medium</p>
+    <p>Sweet and creamy blueberry dessert.</p>
+    <button>View Recipe</button>
+</div>
+
+<div class="card">
+    <img src="./pic/ButterCake.jpg">
+    <h2>Butter Cake</h2>
+    <p class="level medium">Medium</p>
+    <p>Soft and rich buttery cake.</p>
+    <button>View Recipe</button>
+</div>
+
+<div class="card">
+    <img src="./pic/caltaachar.jpg">
+    <h2>Hog Plum Pickle</h2>
+    <p class="level medium">Medium</p>
+    <p>Tangy calta pickle with spices.</p>
+    <button>View Recipe</button>
+</div>
+
+<div class="card">
+    <img src="./pic/Cheeseburger.jpg">
+    <h2>Cheeseburger</h2>
+    <p class="level easy">Easy</p>
+    <p>Juicy burger with melted cheese.</p>
+    <button>View Recipe</button>
+</div>
+
+<div class="card">
+    <img src="./pic/chicken shawarma.jpg">
+    <h2>Chicken Shawarma</h2>
+    <p class="level medium">Medium</p>
+    <p>Middle eastern grilled chicken wrap.</p>
+    <button>View Recipe</button>
+</div>
+
+<div class="card">
+    <img src="./pic/chickenfry.jpg">
+    <h2>Fried Chicken</h2>
+    <p class="level easy">Easy</p>
+    <p>Crispy and juicy fried chicken.</p>
+    <button>View Recipe</button>
+</div>
+
+<div class="card">
+    <img src="./pic/chickenseekh.jpg">
+    <h2>Chicken Seekh Kebab</h2>
+    <p class="level medium">Medium</p>
+    <p>Spiced grilled chicken kebab.</p>
+    <button>View Recipe</button>
+</div>
+
+<div class="card">
+    <img src="./pic/Chingri-Malai-Curry.jpg">
+    <h2>Prawn Malai Curry</h2>
+    <p class="level hard">Hard</p>
+    <p>Rich prawn curry with coconut milk.</p>
+    <button>View Recipe</button>
+</div>
+
+<div class="card">
+    <img src="./pic/chocolatecake.jpg">
+    <h2>Chocolate Cake</h2>
+    <p class="level medium">Medium</p>
+    <p>Rich chocolate dessert cake.</p>
+    <button>View Recipe</button>
+</div>
+
+<div class="card">
+    <img src="./pic/Creamy Pasta.webp">
+    <h2>Creamy Pasta</h2>
+    <p class="level easy">Easy</p>
+    <p>White sauce creamy pasta.</p>
+    <button>View Recipe</button>
+</div>
+
+<div class="card">
+    <img src="./pic/Dum-Biriyani.webp">
+    <h2>Dum Biryani</h2>
+    <p class="level hard">Hard</p>
+    <p>Classic dum cooked biryani.</p>
+    <button>View Recipe</button>
+</div>
+
+<div class="card">
+    <img src="./pic/EggKhichuri.jpg">
+    <h2>Egg Khichuri</h2>
+    <p class="level easy">Easy</p>
+    <p>Comfort food with rice and egg.</p>
+    <button>View Recipe</button>
+</div>
+
+<div class="card">
+    <img src="./pic/frenchfry.webp">
+    <h2>French Fries</h2>
+    <p class="level easy">Easy</p>
+    <p>Crispy potato fries snack.</p>
+    <button>View Recipe</button>
+</div>
+
+<div class="card">
+    <img src="./pic/Fresh Salad.jpeg">
+    <h2>Fresh Salad</h2>
+    <p class="level easy">Easy</p>
+    <p>Healthy vegetable salad bowl.</p>
+    <button>View Recipe</button>
+</div>
+
+<div class="card">
+    <img src="./pic/homemade.webp">
+    <h2>Homemade Dish</h2>
+    <p class="level medium">Medium</p>
+    <p>Simple homemade cooking recipe.</p>
+    <button>View Recipe</button>
+</div>
+
+<div class="card">
+    <img src="./pic/jolpai.jpg">
+    <h2>Olive Pickle</h2>
+    <p class="level medium">Medium</p>
+    <p>Spicy olive achar recipe.</p>
+    <button>View Recipe</button>
+</div>
+
+<div class="card">
+    <img src="./pic/khichuri.webp">
+    <h2>Khichuri</h2>
+    <p class="level easy">Easy</p>
+    <p>Traditional rice and lentil dish.</p>
+    <button>View Recipe</button>
+</div>
+
+<div class="card">
+    <img src="./pic/Lemon_Juice.webp">
+    <h2>Lemon Juice</h2>
+    <p class="level easy">Easy</p>
+    <p>Refreshing lemon drink.</p>
+    <button>View Recipe</button>
+</div>
+
+<div class="card">
+    <img src="./pic/lichi-ice-cream.jpg">
+    <h2>Litchi Ice Cream</h2>
+    <p class="level medium">Medium</p>
+    <p>Sweet litchi flavored dessert.</p>
+    <button>View Recipe</button>
+</div>
+
+<div class="card">
+    <img src="./pic/malaitea.jpg">
+    <h2>Malai Tea</h2>
+    <p class="level easy">Easy</p>
+    <p>Creamy milk tea.</p>
+    <button>View Recipe</button>
+</div>
+
+        </div>
+    </section>
+
+    <footer>
         <p>© 2024 SushaduKitchen. All rights reserved.</p>
-    </div>
+    </footer>
 
     <script src="./recipes.js"></script>
 </body>
