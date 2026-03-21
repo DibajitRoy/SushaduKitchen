@@ -1,5 +1,3 @@
-
-
 function data() {
     var a = document.getElementById("username").value;
     var b = document.getElementById("password").value;
@@ -14,6 +12,9 @@ function data() {
     }
     else {
         alert("Login Successful");
-        return true;
+
+        window.location.href = "home.html";
+
+        return false; jonno
     }
 }

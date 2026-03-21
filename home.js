@@ -1,7 +1,9 @@
 function logout(){
     alert("Logged out successfully");
     window.location.href = "sign _in.html";
+    
 }
+
 function searchRecipe(){
 
 let input = document.getElementById("searchInput").value.toLowerCase();

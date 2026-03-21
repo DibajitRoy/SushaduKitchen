@@ -13,6 +13,7 @@ if(recipes[recipeName]){
     document.getElementById("recipeImage").src = r.image;
     document.getElementById("recipeDifficulty").innerText = r.difficulty;
     document.getElementById("recipeTime").innerText = r.time;
+    
 
     var ingList = document.getElementById("recipeIngredients");
 

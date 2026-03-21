@@ -4,6 +4,8 @@ function logout(){
 }
 
 
+
+
 function searchRecipe(){
 
 let input = document.getElementById("searchInput").value.toLowerCase();
