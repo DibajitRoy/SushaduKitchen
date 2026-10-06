@@ -8,7 +8,7 @@ body {
     padding-bottom: 55px;  /* fixed footer er height */
 }
 
-
+/* ---------- FIXED NAVBAR ---------- */
 header {
     position: fixed;
     top: 0;
@@ -43,7 +43,35 @@ nav a.active {
     color: #ffffff;
 }
 
+/* ---------- WELCOME USER (NAVBAR) ---------- */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
 
+.user-welcome {
+    color: #333;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 7px 14px;
+    background: #fff3dc;
+    border: 1px solid orange;
+    border-radius: 20px;
+    max-width: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* ---------- WELCOME MESSAGE (HOME HERO) ---------- */
+#welcomeMsg {
+    margin: 0 0 10px;
+    font-size: 26px;
+    color: #d97706;
+}
+
+/* ---------- FIXED FOOTER ---------- */
 footer {
     position: fixed;
     bottom: 0;
@@ -60,7 +88,7 @@ footer {
     z-index: 1000;
 }
 
-
+/* ---------- EXTRA PROFESSIONAL LOOK ---------- */
 button {
     transition: 0.3s;
 }
@@ -88,7 +116,7 @@ button:hover {
     color: #333;
 }
 
-
+/* ---------- MOBILE ---------- */
 @media (max-width: 600px) {
     header {
         padding: 0 12px;
@@ -107,5 +135,13 @@ button:hover {
     header button {
         padding: 6px 10px;
         font-size: 13px;
+    }
+
+    .user-welcome {
+        display: none;
+    }
+
+    #welcomeMsg {
+        font-size: 20px;
     }
 }

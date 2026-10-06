@@ -2,10 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=home.html">
     <title>SushaduKitchen</title>
     <script>
-        window.location.replace("home.html");
+        if (sessionStorage.getItem("loggedIn") === "yes") {
+            window.location.replace("home.html");
+        } else {
+            window.location.replace("sign%20_in.html");
+        }
     </script>
 </head>
 <body>

@@ -1,5 +1,5 @@
 function data() {
-    var a = document.getElementById("username").value;
+    var a = document.getElementById("username").value.trim();
     var b = document.getElementById("password").value;
 
     if (a == "" || b == "") {
@@ -13,8 +13,10 @@ function data() {
     else {
         alert("Login Successful");
 
+        sessionStorage.setItem("loggedIn", "yes");
+        sessionStorage.setItem("username", a);
         window.location.href = "home.html";
 
-        return false; jonno
+        return false;
     }
 }
